@@ -1,0 +1,47 @@
+<app-sidebar></app-sidebar>
+
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+        <!-- Notifications Section -->
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Notifications</h2>
+            <button class="relative p-2 text-gray-500 bg-white rounded-full dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V7a6 6 0 10-12 0v7c0 .417-.162.816-.405 1.112L4 17h5m2 0v2a2 2 0 104 0v-2m-6 0h6" />
+                </svg>
+                <span class="absolute top-0 right-0 inline-block w-2 h-2 bg-red-600 rounded-full"></span>
+            </button>
+        </div>
+
+        <!-- Notification Cards -->
+        <div class="grid grid-cols-1 gap-4 mb-4">
+            <!-- Example of a Notification -->
+            <div class="p-4 flex items-start bg-white rounded-lg shadow dark:bg-gray-800">
+                <div class="mr-4">
+                    <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m0 0V8h-1m1 4h.01m6.928-6.928a5.001 5.001 0 11-7.856 7.856 5.001 5.001 0 017.856-7.856z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-gray-800 dark:text-gray-200">Nouvelle notification</h3>
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Vous avez un nouveau message non lu.</p>
+                    <p class="mt-2 text-xs text-gray-400 dark:text-gray-500">Il y a 10 minutes</p>
+                </div>
+            </div>
+
+            <!-- Another Example of a Notification -->
+            <div class="p-4 flex items-start bg-white rounded-lg shadow dark:bg-gray-800">
+                <div class="mr-4">
+                    <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M9 8h6M7 16h10m2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v11a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-sm font-medium text-gray-800 dark:text-gray-200">Mise à jour système</h3>
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">Votre système a été mis à jour avec succès.</p>
+                    <p class="mt-2 text-xs text-gray-400 dark:text-gray-500">Il y a 1 heure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

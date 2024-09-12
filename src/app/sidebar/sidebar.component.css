@@ -1,0 +1,6 @@
+#map {
+    height: 100vh; /* La carte occupera 100% de la hauteur de la fenêtre */
+    width: 100%; /* La carte occupera 100% de la largeur disponible */
+    margin: 0;
+    padding: 0;
+  }

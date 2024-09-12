@@ -1,0 +1,81 @@
+
+<app-sidebar/>
+<div class="p-4 sm:ml-64">
+    <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700 mt-14">
+      <div class="grid grid-cols-3 gap-4 mb-4">
+         <!-- LoRaWAN connection status -->
+         <div class="flex flex-row items-center justify-between h-24 rounded bg-gray-50 dark:bg-gray-800 shadow-md hover:shadow-xl space-x-2 px-4">
+           <p class="text-2xl text-gray-400 dark:text-gray-500">
+             LoRaWAN
+           </p>
+           
+           <!-- Icon for connection status (connected/disconnected) -->
+           <div class="flex items-center">
+             <img src="assets/img.png" class="w-6 h-6" *ngIf="isLoRaWANConnected"/> <!-- Connected -->
+             <img src="assets/img.icons8.png" class="w-6 h-6" *ngIf="!isLoRaWANConnected"/> <!-- Disconnected -->
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="isLoRaWANConnected">Connected</p>
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="!isLoRaWANConnected">Not Connected</p>
+           </div>
+         </div>
+       
+         <!-- Wi-Fi connection status -->
+         <div class="flex flex-row items-center justify-between h-24 rounded bg-gray-50 dark:bg-gray-800 shadow-md hover:shadow-xl space-x-2 px-4">
+           <p class="text-2xl text-gray-400 dark:text-gray-500">
+             Wi-Fi
+           </p>
+           
+           <!-- Icon for connection status (connected/disconnected) -->
+           <div class="flex items-center">
+             <img src="assets/img.png" class="w-6 h-6" *ngIf="isWiFiConnected"/> <!-- Connected -->
+             <img src="assets/img.icons8.png" class="w-6 h-6" *ngIf="!isWiFiConnected"/> <!-- Disconnected -->
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="isWiFiConnected">Connected</p>
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="!isWiFiConnected">Not Connected</p>
+           </div>
+         </div>
+       
+         <!-- GPRS connection status -->
+         <div class="flex flex-row items-center justify-between h-24 rounded bg-gray-50 dark:bg-gray-800 shadow-md hover:shadow-xl space-x-2 px-4">
+           <p class="text-2xl text-gray-400 dark:text-gray-500">
+             GPRS
+           </p>
+           
+           <!-- Icon for connection status (connected/disconnected) -->
+           <div class="flex items-center">
+             <img src="assets/img.png" class="w-6 h-6" *ngIf="isGPRSConnected"/> <!-- Connected -->
+             <img src="assets/img.icons8.png" class="w-6 h-6" *ngIf="!isGPRSConnected"/> <!-- Disconnected -->
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="isGPRSConnected">Connected</p>
+             <p class="ml-2 text-gray-500 dark:text-gray-400" *ngIf="!isGPRSConnected">Not Connected</p>
+           </div>
+         </div>
+       </div>
+       
+       
+       
+     
+       <div class="grid grid-cols-2 gap-4 mb-4">
+         <div class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
+           <!-- Premier composant -->
+           <app-area class="w-full h-full"></app-area>
+         </div>
+       
+         <div class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
+           <!-- Deuxième composant -->
+           <app-area class="w-full h-full"></app-area>
+         </div>
+       </div>
+
+       <div class="grid grid-cols-2 gap-4 mb-4">
+         <div class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
+           <!-- Premier composant -->
+           <app-area class="w-full h-full"></app-area>
+         </div>
+       
+         <div class="flex items-center justify-center rounded bg-gray-50 dark:bg-gray-800">
+           <!-- Deuxième composant -->
+           <app-area class="w-full h-full"></app-area>
+         </div>
+       </div>
+       
+        
+       </div>
+    </div>
